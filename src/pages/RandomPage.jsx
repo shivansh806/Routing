@@ -1,9 +1,11 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 const RandomPage = () => {
+    const data =  useParams()
   return (
-    <div className='h-screen flex items-center justify-center text-8xl'>
-        <h1>Random Page</h1>
+    <div>
+        <h1>This is {data.id} Page</h1>
     </div>
   )
 }
